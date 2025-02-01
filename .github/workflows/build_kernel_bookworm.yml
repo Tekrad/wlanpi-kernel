@@ -21,7 +21,7 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # By default, actions/checkout checks out the branch where the workflow is triggered
           fetch-depth: 0  # Optional: Fetch all history for all branches and tags
