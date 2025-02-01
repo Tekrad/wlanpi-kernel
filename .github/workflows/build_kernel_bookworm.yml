@@ -44,7 +44,7 @@ jobs:
 
       # Step 5: Upload the built Debian package as an artifact
       - name: Upload Debian Package
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: wlanpi-kernel-deb-bookworm
           path: output/*.deb

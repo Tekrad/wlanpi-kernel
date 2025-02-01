@@ -32,7 +32,7 @@ jobs:
           ./build-kernel.sh --arch=arm64 --deb-arch=arm64 -jX
 
       - name: Upload kernel
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: wlanpi-kernel-${{ steps.build-kernel.outputs.package-version }}
           path: ${{ steps.build-kernel.outputs.deb-package }}
